@@ -1,0 +1,22 @@
+@use '../../styles/variables';
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .search_block {
+    display: flex;
+    align-items: center;
+    border: 1px solid variables.$separate-color;
+    border-radius: 8px;
+    padding: 0 8px;
+  }
+}

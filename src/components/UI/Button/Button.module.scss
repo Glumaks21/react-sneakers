@@ -1,0 +1,24 @@
+@use '../../../styles/variables';
+
+.btn {
+  padding: 5px 10px;
+  background-color: variables.$accent-color;
+  border: 1px solid variables.$separate-color;
+  border-radius: 8px;
+
+  transition: transform 0.2s ease-in opacity 0.2s ease-in;
+}
+
+.btn-outlined {
+  padding: 5px 10px;
+  background-color: variables.$bg-color;
+  border: 1px solid variables.$separate-color;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in opacity 0.2s ease-in;
+}
+
+.btn:active, .btn-outlined:active {
+  bottom: -1px;
+  opacity: 0.8;
+  transform: translateY(5px);
+}

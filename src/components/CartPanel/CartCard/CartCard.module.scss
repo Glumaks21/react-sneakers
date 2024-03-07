@@ -1,0 +1,34 @@
+@use '../../../styles/variables';
+
+.content {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  
+  padding: 20px;
+  border: 1px solid variables.$separate-color;
+  border-radius: 8px;
+
+  img {
+    max-width: 70px;
+  }
+
+  .details {
+    flex-grow: 1;
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  button {
+    border: 1px solid variables.$separate-color;
+    border-radius: 8px;
+    background-color: variables.$bg-color;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: variables.$accent-color;
+    }
+  }
+}

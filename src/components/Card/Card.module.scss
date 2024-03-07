@@ -1,0 +1,51 @@
+@use '../../styles/variables';
+
+.content {
+  max-width: 230px;
+  padding: 30px;
+  position: relative;
+  border: 1px solid variables.$separate-color;
+  border-radius: 20px;
+
+  transition: box-shadow 0.3s ease-in transform 0.2 ease-in;
+  
+  span:first-child {
+    cursor: pointer;
+  }
+  img {
+    width: 125px;
+    height: 100px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+  } 
+
+  .details {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .details__price {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        text-transform: uppercase;
+        color: variables.$secondary-color;
+      }
+
+      strong {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0
+     20px rgba(0, 0, 0, 0.3);
+     transform: translateY(-5px);
+  }
+}

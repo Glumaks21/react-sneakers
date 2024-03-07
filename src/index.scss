@@ -1,0 +1,62 @@
+@use './styles/variables';
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+@import url(./styles/reset.css);
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e7f4ff;
+  color: variables.$primary-color;
+}
+
+#root {
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border-radius: 20px;
+  background-color: variables.$bg-color;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+  max-width: 1080px;
+} 
+
+.sneakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 5px 10px;
+  gap: 20px;
+  
+  li {
+    width: 45%;
+  }
+
+  li div:first-child {
+    height: 100%;
+  }
+}
+
+@media (min-width: 590px) {
+  .sneakers-list li {
+    width: 30%;
+  }
+}
+
+@media (min-width: 850px) {
+  .sneakers-list li {
+    width: 23%;
+  }
+}
+
+
+main {
+  padding: 40px;
+  width: 100%;
+}
+
+.login {
+  * {
+    display: block;
+  }
+}
